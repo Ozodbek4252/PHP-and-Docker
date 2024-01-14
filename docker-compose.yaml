@@ -12,6 +12,7 @@ services:
       dockerfile: ./php/Dockerfile
     volumes:
       - ./app:/app
+      
   db:
     image: mysql:8.0
     volumes:
@@ -22,7 +23,7 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: password
       MYSQL_DATABASE: docker_php
-      MYSQL_USER: root
+      MYSQL_USER: regular_user
       MYSQL_PASSWORD: password
     
 
